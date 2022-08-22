@@ -1,0 +1,72 @@
+// 截断
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow:hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: normal;
+}
+
+// 滚动
+.contant-scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar{
+    width: 0px;
+    background-color: white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #b8c4d5;
+    border-radius: 3px;
+    box-shadow: none;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: none;
+  }
+}
+
+// ---------------> 右外边距
+.space-biggerlr {
+  margin-right: 16px;
+}
+.space-lrspace {
+  margin-right: 8px;
+}
+
+// ---------------> font
+.fz-sm {
+  font-size: 12px;
+}
+.fz-mid {
+  font-size: 14px;
+}
+
+// ---------------> btn
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 15px;
+  margin-right: 10px;
+  max-width: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.btn-gray {
+  @extend .btn;
+  background-color: #b8c4d5;
+  &:hover {
+    background-attachment: #abe;
+  }
+}
+
+.btn-default {
+  @extend .btn;
+  background-color: #b8c4d5;
+  &:hover {
+    background-attachment: #abe;
+  }
+}
